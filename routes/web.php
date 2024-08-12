@@ -13,13 +13,6 @@ use Inertia\Inertia;
 |
 */
 
-Route::get('/', [\App\Http\Controllers\LoginController::class, 'login'])->name('login');
-Route::get('/recovery', [\App\Http\Controllers\LoginController::class, 'recovery'])->name('recovery');
-Route::get('/register', [\App\Http\Controllers\LoginController::class, 'register'])->name('register');
-
-
-Route::group(['namespace' => 'App\Http\Controllers', 'prefix' => 'settings', 'as'=>'settings.'], function () {
-    Route::get('/general', [App\Http\Controllers\SettingsController::class, 'general'])->name('general');
-    Route::get('/branches', [App\Http\Controllers\SettingsController::class, 'branches'])->name('branches');
-    Route::get('/users', [App\Http\Controllers\SettingsController::class, 'users'])->name('users');
-});
+Route::get('/', [\App\Http\Controllers\IndexController::class, 'index'])->name('index');
+Route::get('/object/{id}', [\App\Http\Controllers\IndexController::class, 'object'])->name('object');
+Route::get('/catalog/{id}', [\App\Http\Controllers\IndexController::class, 'catalog'])->name('catalog');

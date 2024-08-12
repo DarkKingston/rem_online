@@ -20,6 +20,7 @@
         "webpack": "^5.91.0"
     },
     "dependencies": {
+        "@fancyapps/ui": "^5.0.36",
         "@fortawesome/fontawesome-svg-core": "^6.5.2",
         "@fortawesome/free-solid-svg-icons": "^6.5.2",
         "@fortawesome/vue-fontawesome": "^3.0.8",
@@ -28,8 +29,11 @@
         "@inertiajs/progress": "^0.2.7",
         "@inertiajs/vue3": "^1.1.0",
         "click-outside-vue3": "^4.0.1",
+        "fancybox": "^3.0.1",
         "pinia": "^2.1.7",
+        "swiper": "^11.1.9",
         "vue": "^3.4.27",
+        "vue-dragscroll": "^4.0.5",
         "vue-flatpickr-component": "^11.0.5",
         "vuedraggable": "^2.24.3"
     }

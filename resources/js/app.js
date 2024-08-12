@@ -5,7 +5,7 @@ import Layout from './Shared/Layout.vue'
 import { createPinia } from 'pinia'
 import vClickOutside from "click-outside-vue3"
 import FontAwesomeIcon from './plugins/font-awesome';
-
+import 'swiper/swiper-bundle.css';
 InertiaProgress.init()
 const pinia = createPinia();
 createInertiaApp({
